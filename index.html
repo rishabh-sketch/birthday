@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, [Friend's Name]! 🎉</title>
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for a personal touch */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fce7f3; /* Light pink background */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .section-bg-light {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            margin-bottom: 2rem;
+        }
+        .section-bg-dark {
+            background-color: #fbcfe8; /* Slightly darker pink */
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            margin-bottom: 2rem;
+        }
+        .heart-emoji {
+            font-size: 2.5rem;
+            animation: pulse 1.5s infinite alternate;
+        }
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.1); }
+        }
+        /* Responsive image grid */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        .image-grid img {
+            width: 100%;
+            height: 200px; /* Fixed height for consistency */
+            object-fit: cover; /* Ensures images cover the area without distortion */
+            border-radius: 0.75rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .image-grid img:hover {
+            transform: scale(1.03);
+        }
+        /* Spotify iframe responsiveness */
+        .spotify-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 1rem;
+        }
+        .spotify-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <div class="container py-8">
+
+        <!-- Hero Section: Main Birthday Message -->
+        <section class="section-bg-dark text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-pink-700 mb-4 leading-tight">
+                Happy Birthday, <span class="text-purple-800">[Friend's Name]</span>!
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-700 mb-6">
+                To the most incredible person I know.
+            </p>
+            <span class="heart-emoji">💖</span>
+        </section>
+
+        <!-- Photo Gallery Section -->
+        <section class="section-bg-light">
+            <h2 class="text-4xl font-bold text-center text-pink-600 mb-8">Our Cherished Memories</h2>
+            <div class="image-grid">
+                <!-- Image 1: Replace 'https://placehold.co/400x200/FFC0CB/FFFFFF?text=Memory+1' with your actual image URL -->
+                <img src="https://placehold.co/400x200/FFC0CB/FFFFFF?text=Memory+1" alt="A happy memory with my friend">
+                <!-- Image 2: Replace with your actual image URL -->
+                <img src="https://placehold.co/400x200/FFB6C1/FFFFFF?text=Memory+2" alt="Another happy memory">
+                <!-- Image 3: Replace with your actual image URL -->
+                <img src="https://placehold.co/400x200/FFC0CB/FFFFFF?text=Memory+3" alt="A fun moment captured">
+                <!-- Image 4: Replace with your actual image URL -->
+                <img src="https://placehold.co/400x200/FFB6C1/FFFFFF?text=Memory+4" alt="Smiling faces">
+                <!-- Add more <img> tags here for more photos if you like! -->
+            </div>
+            <p class="text-center text-gray-600 mt-6">
+                Each picture tells a story, and I cherish every single one with you.
+            </p>
+        </section>
+
+        <!-- Heartfelt Message Section -->
+        <section class="section-bg-dark">
+            <h2 class="text-4xl font-bold text-center text-purple-700 mb-6">A Message Just For You</h2>
+            <p class="text-lg text-gray-700 mb-4">
+                My dearest [Friend's Name],
+            </p>
+            <p class="text-lg text-gray-700 mb-4">
+                On your birthday, I want to tell you how much your friendship means to me. You bring so much joy, laughter, and light into my life. Your kindness, strength, and incredible spirit inspire me every day.
+            </p>
+            <p class="text-lg text-gray-700 mb-4">
+                From our [mention a specific type of shared activity, e.g., late-night talks, crazy adventures, quiet coffee mornings] to just being there for each other, every moment with you is a treasure. I'm so grateful for our bond and all the amazing memories we've created.
+            </p>
+            <p class="text-lg text-gray-700">
+                May your special day be filled with all the happiness you deserve, and may the year ahead bring you endless blessings, success, and everything your heart desires.
+            </p>
+            <p class="text-lg text-gray-700 mt-6 text-right font-semibold">
+                With all my love and friendship,<br>
+                [Your Name]
+            </p>
+        </section>
+
+        <!-- Embedded Spotify Playlist Section -->
+        <section class="section-bg-light">
+            <h2 class="text-4xl font-bold text-center text-pink-600 mb-6">A Soundtrack for Your Day</h2>
+            <p class="text-lg text-center text-gray-700 mb-8">
+                Here's a playlist filled with songs that remind me of you, our memories, or just tunes I think you'll love!
+            </p>
+            <div class="spotify-container">
+                <!-- Replace the src URL below with your actual Spotify playlist embed code -->
+                <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M?utm_source=generator"
+                        width="100%" height="380" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <!-- Footer / Final Touch -->
+        <footer class="text-center text-gray-600 pt-8">
+            <p>&copy; 2025 A special website made just for you!</p>
+            <p class="text-sm mt-2">You are loved. ❤️</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // JavaScript for any interactive elements (optional for this simple site)
+        // For example, you could add a confetti effect on page load or a simple animation.
+        // For now, the existing CSS animation on the heart emoji is enough.
+
+        // To replace the placeholder text:
+        // You can directly edit the HTML above where it says "[Friend's Name]" and "[Your Name]".
+        // Or, if you wanted to do it with JS (less common for static sites like this):
+        // document.addEventListener('DOMContentLoaded', () => {
+        //     const friendNameElements = document.querySelectorAll('span.text-purple-800');
+        //     friendNameElements.forEach(el => el.textContent = 'Awesome Friend'); // Replace 'Awesome Friend'
+        // });
+    </script>
+</body>
+</html>
